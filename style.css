@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink:#e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 8px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+/* button */
+#badge-number{
+    background-color:var(--pink) !important;
+}
+
+
+/* ===NAVBAR STYLING=== */
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.12);
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family:var(--lg-font) ;
+    
+}
+.nav-link:hover{
+    color: var(--pink) !important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0,0,0,0.05);
+}
+/* ===NAVBAR STYLING ENDED=== */
+
+/* ===HEADER-STYLING=== */
+
+#header{
+    background-image: url(images/bg-image.webp);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff !important;
+}
+.carousel-item .btn:hover{
+    background: var(--pink) !important;
+}
+/* ==HEADER-STYLING ENDED=== */
+
+/* title styling */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+
+}
+
+/* button styling */
+.active-filter-btn{
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+#productList {
+    padding: 1.5rem 1.5rem;
+}
+.collection-img {
+    padding: 2rem;
+}
+.collection-img img {
+    width: 100%;
+    height : 250px;
+
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 34px;
+    border-radius: 50%;
+    height: 30px;
+   
+}
+#sale{
+    background: var(--pink);
+    color: #fff;
+}
+.rating-color{
+    color: var(--pink);
+}
+/* ===collection styling closed=== */
+
+/* ===special collection styling started=== */
+
+#special-heart{
+    color: var(--pink);
+}
+.special-img span{
+    top: 20px;
+    right: 20px;
+    width: 34px;
+}
+.special-list .btn{
+    padding: 5px 10px !important;
+}
+.special-img img{
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+/* ===special section style ended=== */
+
+/* ===offer styling=== */
+#offers{
+    background-image: url(images/offer_img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content btn{
+    border: transparent;
+}
+/* ===offer styling ended=== */
+
+/* ===about=== */
+#about{
+    background-color: rgba(179,179,179,0.05);
+}
+/* ===about ended=== */
+
+/* ===news letter=== */
+#newsletter{
+    background-color: rgba(190, 28, 28, 0);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: #e5345b;
+}
+#newsletter .btn:hover{
+    background-color: #fff;
+    color: #e5345b;
+}
+/* ===end of newsletter=== */
+
+/* ===footer=== */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink) !important;
+}
+/* end of footer  */
+
+
+
+/* ===purchase section styling=== */
+#purchase{
+    margin-top: 56px;
+}
+#purchase .btn-groups .cart-btn{
+    border-radius: 25px;
+    padding: 7px 9px;
+}
+
+#purchase .btn-groups span{
+    color: var(--pink);
+}
+.product-details h2{
+    font-family: var(--lg-font);
+}
+
+@media(min-width:992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+    
+}
